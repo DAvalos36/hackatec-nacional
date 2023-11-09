@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-    padding-inline: 1.5%;
-    background-color: #EAD8B5;
-    min-height: 100vh ;
+    /* padding-inline: 1.5%; */
+    background-color: transparent;
+    min-height: 100vh;
 }
 
-.yellow{
+.yellow {
     background-color: rgba(255, 225, 71, 0.5);
 }
 

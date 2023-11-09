@@ -6,6 +6,7 @@ function Mapa() {
         <div className='flex flex-col justify-center items-center'>
             <div>
                 <h1>¡Bienvenido/a a {estado}</h1>
+                <Button>Visita el recorrido virtual</Button>
             </div>
             <div>
                 <span>Aquí va el mapita</span>

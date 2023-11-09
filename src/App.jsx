@@ -1,12 +1,13 @@
 import { Button, Image, Link, Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 import Bienvenida from "./components/Bienvenida";
 import Mapa from "./components/Mapa";
+import Recorrido from "./components/Recorrido";
 
 
 function App() {
 	return (
 		<>
-			<Navbar className="bc-yellow">
+			<Navbar className="bg-transparent backdrop-blur-0">
 				<NavbarBrand>
 					<p className="font-bold text-inherit">ACME</p>
 				</NavbarBrand>
@@ -25,7 +26,8 @@ function App() {
 			</Navbar>
 			<div className="s-full flex justify-center items-center">
 				{/* <Bienvenida className=""></Bienvenida> */}
-				<Mapa></Mapa>
+				{/* <Mapa></Mapa> */}
+				<Recorrido></Recorrido>
 			</div>
 		</>
 	);
