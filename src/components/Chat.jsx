@@ -9,7 +9,7 @@ function Mensaje(props) {
 	const content = props.content;
 	const bot = role === "assistant";
 
-	const color = bot ? "bg-default" : "bg-primary";
+	const color = bot ? "bg-black" : "bg-primary";
 
 	if (role === "system") return null;
 
@@ -71,18 +71,21 @@ function Chat() {
 	}
 
 	return (
-		<div className="h-60 border flex flex-col max-w-md">
-			<div className="bg-gray-600 p-3">
-				<ScrollShadow hideScrollBar className="flex flex-col h-[400px] ">
+		<div className="h-60 flex flex-col max-w-md">
+			<div className="bg-transparent backdrop-blur-lg rounded-t-lg border-none p-3">
+				<ScrollShadow
+					hideScrollBar
+					className="flex flex-col h-[400px] w-[448px]"
+				>
 					{/* Mensajes aqui */}
 					{conversacion.map((e, i) => (
 						// rome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						<Mensaje role={e.role} content={e.content} key={i} />
 					))}
+					{/* <BotEscribiendo /> */}
 				</ScrollShadow>
-				<BotEscribiendo />
 			</div>
-			<div className="bg-black p-3 flex justify-around items-center">
+			<div className="bg-black rounded-b-lg p-3 flex justify-around items-center radius">
 				{/* Input aqui */}
 				<Input
 					value={inputValue}
@@ -93,7 +96,7 @@ function Chat() {
 				/>
 				<Button
 					color="primary"
-					className="w-[10%] h-full"
+					isIconOnly
 					isLoading={cargando}
 					isDisabled={inputValue === ""}
 					onClick={() =>

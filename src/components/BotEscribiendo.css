@@ -1,20 +1,20 @@
 .loader {
-  width: 16px;
-  height: 16px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 32px 0 #fff, -32px 0 #fff;
-  /* position: relative; */
+  position: relative;
   animation: flash 0.3s ease-in infinite alternate;
 }
 .loader::before , .loader::after {
   content: '';
-  /* position: absolute; */
+  position: absolute;
   left: -64px;
   top: 0;
   background: #FFF;
-  width: 16px;
-  height: 16px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   transform-origin: 35px -35px;
   transform: rotate(45deg);
@@ -22,7 +22,7 @@
 }
 
 .loader::after {
-  left: 64px;
+  left: 0px;
   transform: rotate(-45deg);
   transform-origin: -35px -35px;
   animation: hitR 0.3s ease-out infinite alternate;
