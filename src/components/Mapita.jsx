@@ -1,9 +1,9 @@
 import { SVGMap } from "react-svg-map";
 import Mexico from "@svg-maps/mexico";
 import "./Mapita.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-function Mapita() {
+function Mapita({ estadoSeleccionado, setEstadoSeleccionado }) {
 	const uno_pueblo = [
 		"Baja California",
 		"Coahuila",
@@ -44,8 +44,6 @@ function Mapita() {
 	const ocho_pueblos = ["Jalisco"];
 
 	const nueve_pueblos = ["Hidalgo", "Michoacán", "Puebla"];
-
-	const [estadoSeleccionado, setEstadoSeleccionado] = useState("");
 
 	useEffect(() => {
 		Mexico.locations.forEach((location) => {
