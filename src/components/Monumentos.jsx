@@ -30,9 +30,9 @@ export default function Monumentos() {
         ciudad: "Michoacan",
       },
       {
-        title: "Museo",
-        img: "./Museo Morelos.jpg",
-        ciudad: "Morelos",
+        title: "Rey Colima",
+        img: "./reyColima.jpeg",
+        ciudad: "Colima",
       },
       {
         title: "Museo",
