@@ -1,6 +1,7 @@
 import { Button } from '@nextui-org/react';
 import React from 'react';
 import { motion } from "framer-motion"
+import { Link } from 'wouter';
 
 function Bienvenida() {
     return (
@@ -13,7 +14,7 @@ function Bienvenida() {
             <p style={{textAlign: 'center'}}>Es un gusto para nosotros que nos estés visitando. Esperamos que
                 tu estancia sea de lo más agradable y que disfrutes de tu experiencia virtual.
             </p>
-            <Button>¡Adelante!</Button>
+            <Button as={Link} href='/mapa'>¡Adelante!</Button>
         </div>
         </motion.div>
     );

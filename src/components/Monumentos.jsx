@@ -44,6 +44,7 @@ export default function Monumentos(props) {
 			img: "./reyColima.jpeg",
 			ciudad: "Recorrer",
 			estado: "Colima",
+			link: "https://digserv.com.mx/",
 		},
 		{
 			title: "Museo",
