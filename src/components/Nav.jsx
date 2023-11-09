@@ -12,7 +12,7 @@ function Nav() {
 	return (
 		<Navbar className="bg-transparent backdrop-blur-0">
 			<NavbarBrand>
-				<p className="font-bold text-inherit">ACME</p>
+				<Link href="/"><Image src="bite.svg" style={{height: 30, width: 80}}></Image></Link>
 			</NavbarBrand>
 			<NavbarContent justify="end">
 				<NavbarItem className="hidden lg:flex">
@@ -21,6 +21,7 @@ function Nav() {
 						className="rounded-full round-brown"
 						href="#"
 						variant="bordered"
+						style={{fontSize: 14, fontWeight: 500}}
 					>
 						Recorridos virtuales
 					</Button>

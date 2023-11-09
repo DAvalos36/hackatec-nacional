@@ -67,6 +67,13 @@ function Recorrido() {
             className={`fecha ${actual >= 6 ? "bg-black" : "bg-gray-500"}`}
           ></a>
         </div>
+    <p className="z-50" style={{fontSize: 18, color: 'white', textAlign: 'center', paddingInline: 30}}>Hidalgo del Parral es una ciudad ubicada en el estado de Chihuahua, en el norte de México. Conocida comúnmente como "Parral", esta ciudad tiene una rica historia minera, ya que fue un importante centro de extracción de plata en el pasado.
+
+Parral es reconocido por su arquitectura colonial, sus calles empedradas y su ambiente tranquilo. La ciudad ha conservado edificaciones históricas, como la Parroquia de San José, que data del siglo XVIII, así como casas antiguas y plazas que reflejan su herencia cultural.
+
+Además de su legado minero, Hidalgo del Parral es famoso por su producción de chile y por ser la cuna del famoso revolucionario mexicano, Francisco Villa, cuya casa natal se ha convertido en un museo.
+
+La ciudad atrae a visitantes interesados en su historia, cultura, arquitectura colonial y su entorno natural, convirtiéndola en un destino turístico notable en la región norte de México.</p>
       </section>
       <section id="1">
         <div className="w-1/4 mx-auto p-4">

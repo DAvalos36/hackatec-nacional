@@ -9,12 +9,12 @@ function Mapa() {
 
 	return (
 		<div className="flex flex-col justify-center items-center">
-			<div>
-				<h1>
+			<div className="flex flex-col justify-center items-center">
+				<h1 style={{textAlign: 'center', fontSize: 18, fontWeight: 500, marginBottom: 10}}>
 					¡Bienvenido/a a{" "}
-					{estadoSeleccionado !== "" ? estadoSeleccionado : "Mexico"}
+					{estadoSeleccionado !== "" ? estadoSeleccionado : "México"}
 				</h1>
-				<Button as={Link} href="/recorrido">
+				<Button as={Link} href="/recorrido" style={{fontSize: 15, fontWeight: 400}} variant='shadow' color='secondary'>
 					Visita el recorrido virtual
 				</Button>
 			</div>
