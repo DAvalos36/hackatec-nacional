@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {Card, CardBody, CardFooter, Image,Button} from "@nextui-org/react";
+import Monumentos from "./Monumentos.jsx"
 
 function Mapa() {
     const [estado, setestado] = useState("México")
@@ -12,7 +14,7 @@ function Mapa() {
                 <span>Aquí va el mapita</span>
             </div>
             <div>
-                <p>Aquí va el párrafo...</p>
+                <Monumentos/>
             </div>
         </div>
     );
