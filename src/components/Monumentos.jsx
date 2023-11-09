@@ -74,7 +74,8 @@ export default function Monumentos() {
             </CardBody>
             <CardFooter className="text-small justify-between">
               <b>{item.title}</b>
-              <p className="text-default-500 pl-48px">{item.ciudad}</p>
+              <Button><p className="text-default-500 pl-48px">{item.ciudad}</p></Button>
+              
             </CardFooter>
           </Card>
         ))}
