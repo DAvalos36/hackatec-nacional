@@ -26,8 +26,8 @@ function App() {
 			</Navbar> */}
 			<div className="s-full flex justify-center items-center">
 				{/* <Bienvenida className=""></Bienvenida> */}
-				<Mapa></Mapa>
-				{/* <Recorrido></Recorrido> */}
+				{/* <Mapa></Mapa> */}
+				<Recorrido></Recorrido>
 			</div>
 		</>
 	);

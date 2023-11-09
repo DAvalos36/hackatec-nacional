@@ -4,7 +4,7 @@ window.onload = function() {
     };
 
     var secciones = document.getElementsByTagName("section");
-var fechas = document.getElementsByClassName("fecha");
+    var fechas = document.getElementsByClassName("fecha");
 
 function myFunction() {
     if(window.scrollY >= secciones[0].offsetTop){
