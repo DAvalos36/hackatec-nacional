@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
-import { Input } from "@nextui-org/react";
+import { Input, ScrollShadow } from "@nextui-org/react";
 import BotEscribiendo from "./BotEscribiendo";
+import { useState } from "react";
 
 function Mensaje(props) {
 	const temp = parseInt(props.id, 10);
@@ -13,7 +14,7 @@ function Mensaje(props) {
 			size="lg"
 			className={`${
 				bot ? "self-start" : "self-end"
-			} mt-3 break-all ${color} p-2 rounded-lg text-white`}
+			} mt-3 break-all ${color} p-2 rounded-lg text-white max-w-[80%]`}
 		>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse minima
 			repellat laborum quibusdam optio atque? Facilis aut atque itaque
@@ -26,13 +27,17 @@ function Mensaje(props) {
 const arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
 function Chat() {
+	const [conversacion, setConversacion] = useState([]);
+
 	return (
 		<div className="h-60 border flex flex-col max-w-md">
 			<div className="bg-orange-400 p-3">
-				{/* Mensajes aqui */}
-				{arr.map((id, i) => (
-					<Mensaje id={i} key={id} />
-				))}
+				<ScrollShadow hideScrollBar className="flex flex-col h-[400px] ">
+					{/* Mensajes aqui */}
+					{arr.map((id, i) => (
+						<Mensaje id={i} key={id} />
+					))}
+				</ScrollShadow>
 				<BotEscribiendo />
 			</div>
 			<div className="bg-blue-400 p-1">
