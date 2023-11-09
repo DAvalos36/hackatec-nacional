@@ -55,7 +55,7 @@ function Mapita() {
 	}, []);
 
 	return (
-		<div className="w-full flex justify-center items-center">
+		<div className="w-full flex justify-center items-center my-4">
 			<SVGMap
 				map={Mexico}
 				onChange={(e) => console.log(e)}
