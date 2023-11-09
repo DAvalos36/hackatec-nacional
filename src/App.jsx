@@ -7,7 +7,7 @@ import Recorrido from "./components/Recorrido";
 function App() {
 	return (
 		<>
-			<Navbar className="bg-transparent backdrop-blur-0">
+			{/* <Navbar className="bg-transparent backdrop-blur-0">
 				<NavbarBrand>
 					<p className="font-bold text-inherit">ACME</p>
 				</NavbarBrand>
@@ -23,7 +23,7 @@ function App() {
 						</Button>
 					</NavbarItem>
 				</NavbarContent>
-			</Navbar>
+			</Navbar> */}
 			<div className="s-full flex justify-center items-center">
 				{/* <Bienvenida className=""></Bienvenida> */}
 				{/* <Mapa></Mapa> */}
