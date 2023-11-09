@@ -1,0 +1,46 @@
+/* 1 Pueblo Mágico - Naranja claro */
+.uno_pueblo {
+  fill: #FFA47B;
+}
+
+/* 2 Pueblos Mágicos - Rojo intenso */
+.dos_pueblos {
+  fill: #FF2900;
+}
+
+/* 3 Pueblos Mágicos - Verde */
+.tres_pueblos {
+  fill: #00A63E;
+}
+
+/* 4 Pueblos Mágicos - Verde claro */
+.cuatro_pueblos {
+  fill: #9FCF84;
+}
+
+/* 5 Pueblos Mágicos - Azul intenso */
+.cinco_pueblos {
+  fill: #007BC2;
+}
+
+/* 6 Pueblos Mágicos - Azul claro */
+.seis_pueblos {
+  fill: #38CDF8;
+}
+
+/* 8 Pueblos Mágicos - Rojo */
+.ocho_pueblos {
+  fill: #F80010;
+}
+
+.resaltar_estado {
+  fill: #FFFF00; /* Amarillo */
+  stroke: #000000; /* Borde negro */
+  stroke-width: 2; /* Ancho del borde */
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); /* Sombra */
+}
+
+/* 9 Pueblos Mágicos - Púrpura */
+.nueve_pueblos {
+  fill: #883296;
+}
